@@ -2,20 +2,20 @@
 const express = require("express");
 const path = require("path");
 
+// require express session
+const session = require("express-session"); 
+
 // require handlebars
 const exphbs = require("express-handlebars");
-
-// require express session
-const session = require("express-session");
 
 // paths for config/ controllers
 const controller = require("./controllers");
 const sequelize = require("./config/connection");
 
-// connect session sqlize store
+// sequlize store
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
-// session function
+// function for session
 const exSession = {
     secret: "super secret secret",
     cookie: {},
