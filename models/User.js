@@ -96,3 +96,6 @@ User.init(
     }
 );
 
+
+// exports user
+module.exports = User;
