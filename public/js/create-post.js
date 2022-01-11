@@ -33,6 +33,8 @@ async function createPost(event) {
 // add query selector
 // add event listener
 document
+
+    // ceate post button query selector
     .querySelector("#create-post-btn")
     // event listener to create post
     .addEventListener("click", createPost);
