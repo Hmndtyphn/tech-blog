@@ -1,0 +1,8 @@
+   {{! dashboard page--  --}}
+
+<h1 class="padding-25">My Posts</h1>
+<p><a class="link" href="/post">New Post</a></p>
+{{#each posts as |aPost| }}
+{{!-- Pass in the data to each individual post --}}
+{{> post aPost}}
+{{/each}}

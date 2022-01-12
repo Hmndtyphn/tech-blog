@@ -1,0 +1,41 @@
+{{!-- single post  --}}
+<div class="card single-post-padding">
+    
+    <h1 id="post-title" class="post-header">{{post.title}} </h1>
+    <h4>Posted by {{post.user.username}} on 1/11/2021</h4>
+
+    <div class="container">
+        <p id="post-body" class="post-text post-text-padding">{{post.body}}</p>
+    </div>
+    {{!-- if user owns post, they can edit --}}
+    {{#if currentUser}}
+    <button id="edit-btn">Edit</button>
+    <button id="delete-btn">Delete</button>
+    {{/if}}
+</div>
+
+
+
+<div class="padding-25">
+    <form id="comment-form " class="padding-20">
+        <label for="comment-text">Leave A Comment</label>
+        <input class="padding-25" type="textarea" name="comment-text" id="comment-text">
+        <button class="padding-25" id="post-comment-btn">Post</button>
+    </form>
+</div>
+
+{{!-- comments --}}
+{{#each post.comments as |aComment|}}
+{{> comment aComment}}
+{{/each}}
+
+{{!-- links single-post css --}}
+<link rel="stylesheet" href="/css/single-post.css">
+
+{{!-- links single-post js --}}
+<script src="/js/single-post.js"></script>
+{{#if currentUser}}
+
+{{!-- links delete post js --}}
+<script src="/js/edit-post.js"> </script>
+{{/if}}
