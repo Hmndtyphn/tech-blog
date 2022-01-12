@@ -1,0 +1,13 @@
+.single-post-padding {
+    padding: 60px;
+  }
+  
+  .post-text-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  #comment-form {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
