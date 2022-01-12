@@ -5,13 +5,13 @@ const router = require("express").Router();
 const homeRoutes = require("./home-routes");
 
 // require user routes
-const userRoutes = require("./user-routes");
+const userRoutes = require("./api/user-routes");
 
 // require post routes
-const postRoutes = require("./post-routes");
+const postRoutes = require("./api/post-routes");
 
 // require comment routes
-const commentRoutes = require("./comment-routes");
+const commentRoutes = require("./api/comment-routes");
 
 
 

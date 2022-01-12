@@ -15,7 +15,7 @@ async function loginHandler(event) {
 
         // response awaits fetch from login
         const response = await fetch("/api/users/login", {
-            method: "POST",
+            method: "post",
 
             // json string for email and password
             body: JSON.stringify({

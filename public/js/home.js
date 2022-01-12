@@ -1,6 +1,6 @@
 // inactivity timer
-const inactiveTimer = function () {
-    const time;
+var inactivityTimer = function () {
+    var time;
     window.onload = resetTimer
 
     // events 
@@ -23,5 +23,5 @@ const inactiveTimer = function () {
 
 // run inactivity timer on current window
 window.onload = function () {
-    inactiveTimer();
+    inactivityTimer();
 };

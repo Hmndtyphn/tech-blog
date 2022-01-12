@@ -80,7 +80,7 @@ User.init(
                 return updateUserData;
             },
         },
-        sequlize,
+        sequelize,
 
         // modelName
         modelName: "user",
